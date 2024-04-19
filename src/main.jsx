@@ -12,6 +12,7 @@ import DefaultLayout from "./layouts/DefaultLayout.jsx";
 import Post from "./pages/Post.jsx";
 import Rating from "./pages/Rating.jsx";
 import ProfileStudent from "./pages/ProfileStudent.jsx";
+import Page from "./pages/landing/page.jsx";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
           },
         ],
       },
+      {
+        path: "/landing",
+        element: <Page />
+      }
     ],
   },
 ]);
