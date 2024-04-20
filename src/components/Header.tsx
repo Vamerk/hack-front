@@ -18,7 +18,7 @@ export const Header: React.FC<Props> = ({ sidebarOpen, setSidebarOpen }) => {
     const handleClickOutside = (ev: MouseEvent) => {
       if (ref.current && !ref.current.contains(ev.target as Node)) {
         toggleProfile();
-        console.log();
+        console.log("");
       }
     };
 
@@ -30,7 +30,7 @@ export const Header: React.FC<Props> = ({ sidebarOpen, setSidebarOpen }) => {
   }, [ref]);
 
   return (
-    <header className="bg-white ">
+    <header className="bg-white">
       <div className="flex max-w-screen-xl mx-auto justify-between items-center p-4  ">
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
