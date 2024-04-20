@@ -1,6 +1,7 @@
 import { HeaderSection } from "./HeaderSection";
 import InformationSection from "./InformationSection";
 import { About } from "./About";
+import { Universities } from "./Universities";
 
 export const MainSection = () => {
     const FIRST_BENEFITS = [
@@ -35,6 +36,7 @@ export const MainSection = () => {
       <div className="  dark::text-white w-full ">
         <HeaderSection />
         <About id="about-us"/>
+        <Universities/>
         <InformationSection
             name={"обучение сотрудников"}
             desc={"Адаптация новичков и обучение текущих сотрудников"}
